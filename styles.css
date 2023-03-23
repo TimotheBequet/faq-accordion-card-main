@@ -1,0 +1,187 @@
+body {
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%)) no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.container {
+    width: 60%;
+    height: 50%;
+    max-width: 900px;
+    min-width: 900px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    border-radius: 20px;
+}
+
+.image,
+.text {
+    height: 100%;
+}
+
+.image {
+    width: 60%;
+}
+
+.image_container {
+    position: relative;
+    height: 100%;
+}
+
+.woman_container,
+.pattern_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.woman,
+.pattern,
+.box {
+    position: absolute;
+}
+
+.woman {
+    z-index: 500;
+    left: -80px;
+}
+
+.box {
+    z-index: 1000;
+    top: 194px;
+    left: -94px;
+}
+
+.pattern_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pattern {
+    position: absolute;
+    top: -265px;
+    left: -546px;
+}
+
+.text {
+    width: 40%;
+    padding-right: 100px;
+    color: hsl(238, 29%, 16%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.question:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+.question_text {
+    margin-right: 5px;
+}
+
+.question_text_active {
+    color: hsl(237, 12%, 33%);
+    font-weight: 700;
+}
+
+.response {
+    display: none;
+    max-height: 0;
+    color: hsl(240, 6%, 50%);
+    transition: max-height 0.2s ease-out;
+}
+
+.question_arrow {
+    transition: all 0.2s linear;
+}
+
+.arrow_opened {
+    transform: rotate(180deg);
+}
+
+.response_opened {
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        height: 60%;
+        max-width: 300px;
+        min-width: 300px;
+        padding: 0 25px;
+    }
+
+    .image,
+    .text {
+        width: 100%;
+    }
+
+    .image {
+        height: auto;
+    }
+
+    .woman_container,
+    .pattern_container{
+        overflow: visible;
+    }
+
+    .woman {
+        width: 240px;
+        left: 35px;
+        top: -110px;
+    }
+
+    .pattern {
+        width: 240px;
+        left: 35px;
+        top: -130px;
+    }
+
+    .box {
+        width: 100px;
+        left: 28px;
+        top: -45px;
+    }
+
+    .text {
+        padding-right: 0;
+        justify-content: flex-start;
+        margin-top: 100px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+}
