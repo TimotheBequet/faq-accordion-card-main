@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://your-solution-url.com)
+- Solution URL: (https://www.frontendmentor.io/solutions/faq-accordion-card-with-vanillajs-BQ0wcf_ik5)
 - Live Site URL: (https://timothebequet.github.io/faq-accordion-card-main/)
 
 ## My process
