@@ -30,6 +30,7 @@ const app = {
                 const response = elem.querySelector('.response_opened');
                 if (response) {
                     response.classList.remove('response_opened');
+                    response.style.maxHeight = null;
                 }
             }
         });
